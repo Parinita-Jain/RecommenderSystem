@@ -1,0 +1,67 @@
+Recommneder Systems---
+Helps to match users with items by--
+1. ease info overlaod
+2. sales assistance(guidance,advisory,persuasion...,)
+
+where the interests and preferences of users can be identified based on--
+past behaviour,relation to other users,item similarity,context,demographics,etc
+
+Non-personalized recommneder systems---
+
+personalization-act of tailoring an experience based on user info collected.
+hwere info could be--geolocation,user persona,time of day,browser or device type.
+personalized reco systems are subdivided into--
+collaborative filtering,content based and knowledge based filtering.
+
+Non-personalized recommneder systems--- are simplest types of recommender systems.The ecommendations are same for every user.These are used when we dont know much about user. eg, billboard music ratings, trip advisor hotel ratings,etc
+
+hacker news ranking algo-it looks like--
+
+score=P-1/(T+2)^G , P=points of an item,(-1 to negate submitters vote),T=time since submission(in hrs),G=gravity defaults to 1.8
+
+Personalized recommender systems-----------------------gives recommendation list
+
+collaborative filtering---tell me wht's popular among peers.
+content based--show me more of the same what I have liked.--gives product features+knowledge models --->recom component----->recom list
+
+Collaborative filtering--
+slide--
+
+User based collaborative filtering---
+
+Pearson corr--cov divided by std dev betw two variables
+
+pred(a,p)==computing a prediction for the rating of user a for a given item p that also factors the relative proximity of the nearest neighbours n and a'a avg rating ra, add the weighted deviations for the ratings to calc the predicted rating. So,this nothing but the weighted avg of the normalized ratings.
+normalized meaning rbp-rbbar.ie. rating of b given by every other user.This rating is then weighted by how similar a given user was to the active user A.
+
+Item based collaborative filtering
+
+svd---singular value decomposition
+
+association rules--market basket analysis-------
+
+Predictive ratings--MAE-computes the deviation between predicted ratings and actual ratings.1/n summationi=1ton |p_i-r_i|
+RMSE is like MAE but place more emphasis on larger deviation.sqrt(1/n summationi=1ton (p_i-r_i)^2)
+
+Classification accuracy-- precision--this is the measure of exactness,determines the fraction of relevant items or results retrieved out of all items retrieved.
+eg the proportioin of movies retrieved that are actually good.
+
+recall-- a measure of completeness,it determines the fraction of relevant items retrieved out of all relevant items.eg the proportion of all good movies recommended.
+
+content based filtering---
+
+Term freq-inverse doc freq--better than bag of words and takes care of the fact that more common words are often less useful and penalizes their weight.
+term measures how often a word appears(density in a doc)=count of term i in a doc j/no. of terms in doc j
+IDF-aims to reduce the weight of terms that are very common in the dataset.=log(count of docs in entire dataset/count of docs carrying item i)
+
+knowledge based recommneder system
+
+
+
+
+
+
+
+
+
+
